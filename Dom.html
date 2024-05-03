@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <div class="border1">
+       <p class="para1"></p>
+       <img src="./msd csk.jpg" height="150px" >
+       <p class="name"></p>
+       <p class="age"></p>
+       <p class="bloodgroup"></p>
+       <p class="place"></p>
+   </div>
+       
+   
+
+
+    <script>
+       let div1=document.getElementsByClassName("border1")[0]
+    
+       div1.style.height="400px";
+       div1.style.backgroundColor="lightgreen";
+       div1.style.width="400px";
+       div1.style.border="2px solid green";
+       div1.style.boxSizing="border-box"
+       div1.style.padding="0px 0px 20px 50px"
+    
+
+       let para=document.getElementsByClassName("para1")[0]
+       para.innerHTML="Chennai Super Kings";
+       para.style.display="flex";
+       para.style.marginLeft="60px"
+       para.style.fontSize="20px"
+    //    para.style.justifyContent="center";
+
+       let image=document.querySelectorAll("img")[0]
+    //    image.style.display="flex";
+    //    image.style.justifyItems="center";
+          image.style.margin="0px 60px";
+          image.style.borderRadius="50px";
+
+        let name=document.getElementsByClassName("name")[0]
+        name.innerHTML="Name: M S D";
+        name.style.marginLeft="80px"
+
+        let age=document.getElementsByClassName("age")[0]
+        age.innerHTML="Age: 22";
+        age.style.marginLeft="80px"
+
+        let bg=document.getElementsByClassName("bloodgroup")[0]
+        bg.innerHTML="Blood Group: O- ve";
+        bg.style.marginLeft="80px"
+
+        let place=document.getElementsByClassName("place")[0]
+        place.innerHTML="Address: Chennai";
+        place.style.margin="10px 80px 0px "
+        // place.style.marginBottom="50px"
+
+    </script>
+
+</body>
+</html>
