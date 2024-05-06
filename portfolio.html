@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+     </style>
+</head>
+<body>
+    <div class="one">
+        <h1>
+             
+        </h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+    <!-- <img src="./shiva prasad.jpeg" > -->
+
+        <script>
+           let onetwo=document.getElementsByClassName("one")[0]
+    
+            onetwo.style.height="16vh";
+            onetwo.style.backgroundColor="lightgreen";
+
+            onetwo.style.display="flex"
+            onetwo.style.justifyContent="space-between"
+            onetwo.style.alignItems="baseline"
+            onetwo.style.paddingTop="20px"
+            
+
+            let oneend=document.getElementsByTagName("h1")[0]
+            oneend.innerHTML="Portfolio"
+            // oneend.style.display="flex"
+            // oneend.style.justifyContent="end";
+
+            let list1=document.getElementsByTagName("li")[0]
+            let list2=document.getElementsByTagName("li")[1]
+            let list3=document.getElementsByTagName("li")[2]
+            let list4=document.getElementsByTagName("li")[3]
+            list1.innerHTML="Home"
+            list2.innerHTML="About"
+            list3.innerHTML="Skills"
+            list4.innerHTML="Contact"
+
+            let ulGet=document.getElementsByTagName("ul")[0]
+            ulGet.style.display="flex"
+            ulGet.style.listStyle="none"
+            ulGet.style.marginRight="50px"
+            ulGet.style.gap="10px"
+
+           let body1=document.createElement("div")
+           document.body.appendChild(body1)
+           body1.style.height="60vh"
+           body1.style.display="flex"
+        //    body1.style.position="relative"
+           
+           let div1=document.createElement("div")
+           body1.appendChild(div1)
+
+           let h1=document.createElement("h1")
+           h1.innerHTML="✋Hello,i'm Shiva Prasad - a Front end devoloper,who loves crafting user -friendly websites and applications. Welcome to my Matrix."
+           div1.appendChild(h1)
+           div1.style.display="inline-block"
+           div1.style.width="65vw"
+           div1.style.position="relative"
+           div1.style.display="flex"
+           div1.style.alignItems="center"
+ 
+           let div2=document.createElement("div")
+           body1.appendChild(div2)
+           div2.style.display="inline-block"
+           div2.style.width="35vw"
+           let image=document.createElement("img")
+           image.src= "./shiva prasad.jpeg"
+           image.style.width="100%"
+           image.style.borderRadius="2000px"
+            // image.style.height="150%" 
+           div2.appendChild(image)
+
+           
+
+        </script>
+
+
+
+</body>
+</html>
